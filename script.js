@@ -1,26 +1,26 @@
-// إعداد الجزيئات (نفس الموقع الأصلي)
+// إعداد الخلفية المتحركة (الجزيئات)
 particlesJS("particles-js", {
     "particles": {
-        "number": { "value": 70, "density": { "enable": true, "value_area": 800 } },
+        "number": { "value": 80 },
         "color": { "value": "#ffffff" },
         "shape": { "type": "circle" },
-        "opacity": { "value": 0.3 },
+        "opacity": { "value": 0.2 },
         "size": { "value": 2 },
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#c5a059",
+            "color": "#1e3a8a",
             "opacity": 0.2,
             "width": 1
         },
-        "move": { "enable": true, "speed": 1.5 }
+        "move": { "enable": true, "speed": 1.2 }
     }
 });
 
-// تأثير الكتابة للنص الرئيسي
-new TypeIt("#typewriter", {
-    strings: ["بوابة وزارة العدل", "نظام التحقيقات العسكرية"],
-    speed: 80,
+// تأثير الكتابة
+new TypeIt("#typing-text", {
+    strings: ["وزارة العدل", "التحقيقات الجنائية"],
+    speed: 100,
     loop: true,
-    cursor: false
+    nextStringDelay: 2500
 }).go();
